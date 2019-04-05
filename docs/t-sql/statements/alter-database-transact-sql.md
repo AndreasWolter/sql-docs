@@ -576,10 +576,7 @@ The procedure cache is also flushed in the following scenario: You run several q
 You can use catalog views, system functions, and system stored procedures to return information about databases, files, and filegroups.
 
 ## Permissions
-Only the server-level principal login (created by the provisioning process) or members of the `dbmanager` database role can alter a database.
-
-> [!IMPORTANT]
-> The owner of the database cannot alter the database unless they are a member of the `dbmanager` role.
+Only the server-level principal login (created by the provisioning process), members of the `dbmanager` database role in master or members of the `db_owner` database role in the user database can alter a database.
 
 ## Examples
 ### A. Check the edition options and change them
